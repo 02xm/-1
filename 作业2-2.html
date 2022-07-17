@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业2-2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .item0 {
+            
+            display: grid;
+            flex: 1;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            grid-template-areas: 
+            "a1 a2 a2 a3"
+            "a4 a2 a2 a5"
+            "a6 a6 a7 a8"
+            "a6 a6 a9 a10";
+            grid-gap: 15px;
+            background-color: rgb(26,26,26);
+            justify-items: center;
+            margin: 10px;
+            padding: 10px;
+            width: 50%;
+        }
+        .e {
+            border: 1.5px solid rgb(42, 42, 42);
+            background-color: rgb(42, 42, 42);
+        }
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .item2 {
+            grid-column: 2/4;
+            grid-row: 1/3;
+            font-size: 3em;
+        }
+        .item6 {
+            grid-row: 3/5;
+            grid-column: 1/3;
+            font-size: 3em;
+        }
+        span {
+            color: rgb(180, 0, 0);
+        }
+        h4 {
+            color: white;
+        }
+        p {
+            color: rgb(100, 100, 100);
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="item0">
+        <div class="item1 e"><img src="87F4F34D749FB7E782C199A374228EFA.jpg" alt="ETCH"></div>
+        <div class="item2 e">A <span>small team</span> of designers and developers, who help brands with <span>big ideas</span>.</div>
+        <div class="item3 e"><img src="AAA1FAF9360938C36285C226EC4EE7C2.jpg" alt="鹿"></div>
+        <div class="item4 e"><h4>Got a new project?</h4><p>We work with startups and established companies to plan. design and build digital products.</p></div>
+        <div class="item5 e"><h4>Code and Resource</h4><p>We create robust code and useful resources, and share them with the industry.</p></div>
+        <div class="item6 e"><span>5</span> Designers, <span>2</span> Developers, and <span>1</span> person counting the pennies.</div>
+        <div class="item7 e"><p>We see it as our <span>responsibility</span> to keep the web moving forwards.</p></div>
+        <div class="item8 e"><p>We move fast-working in short <span>instinctive</span> sprints, validating our decisions along the way.</p></div>
+        <div class="item9 e"><p>We like to add value-consider us as partners and <span>involve us early</span> in the thinking.</p></div>
+        <div class="item10 e"><img src="05FC7DF40E6E971CE5DE3E69ACF536C5.jpg" alt="手机"></div>
+    </div>
+</body>
+</html>
